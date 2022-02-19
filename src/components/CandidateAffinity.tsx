@@ -23,7 +23,7 @@ export const CandidateAffinity: React.VFC<Props> = ({ candidate }) => {
         Agreement score: {calculateOverallAffinity(answers, candidate.answers)}%
       </Box>
       <Box mb={3}>
-        <Button onClick={() => setShowDetails(true)}>Details</Button>
+        <Button onClick={() => setShowDetails(!showDetails)}>Details</Button>
         {showDetails && <CandidateComparison candidate={candidate} />}
       </Box>
     </Box>
