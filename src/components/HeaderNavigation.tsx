@@ -8,7 +8,10 @@ export const HeaderNavigation: React.FC = () => {
       <Box mr={3}>
         <Link href="/about">About</Link>
       </Box>
-      <Link href="/contact">Contact</Link>
+      <Box mr={3}>
+        <Link href="/contact">Contact</Link>
+      </Box>
+      <Link href="/examplequiz">Example</Link>
     </Flex>
   );
 };
